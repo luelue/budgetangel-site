@@ -9,6 +9,20 @@
     gtag('js', new Date());
     gtag('config', 'AW-18074216692');
   </script>
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18074216692/HWScCPKJ4pocEPTRuqpD',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Budget Angel — Your Pixel Guardian Against Impulse Buying</title>
@@ -676,7 +690,7 @@
     </div>
     <h1>Budget Angel</h1>
     <p class="tagline">Your pixel guardian against impulse buying</p>
-    <a href="https://chromewebstore.google.com/detail/budget-angel/jolpbibbbajmcbbodncpoobbpgcjmang" class="btn btn-gold">
+    <a href="https://chromewebstore.google.com/detail/budget-angel/jolpbibbbajmcbbodncpoobbpgcjmang" class="btn btn-gold" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/budget-angel/jolpbibbbajmcbbodncpoobbpgcjmang');">
       Add to Chrome — It's Free
     </a>
   </section>
@@ -781,7 +795,7 @@
     <div class="container">
       <h2>Ready to stop impulse buying?</h2>
       <p>Join thousands of mindful shoppers. Free forever.</p>
-      <a href="https://chromewebstore.google.com/detail/budget-angel/jolpbibbbajmcbbodncpoobbpgcjmang" class="btn btn-gold">
+      <a href="https://chromewebstore.google.com/detail/budget-angel/jolpbibbbajmcbbodncpoobbpgcjmang" class="btn btn-gold" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/budget-angel/jolpbibbbajmcbbodncpoobbpgcjmang');">
         Install Budget Angel
       </a>
     </div>
